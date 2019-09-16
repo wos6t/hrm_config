@@ -23,6 +23,9 @@ zuul:
 
     page.serviceId: hrm-page # 服务名
     page.path: /page/** # 把myUser打头的所有请求都转发给user-provider
+
+    user.serviceId: hrm-user # 服务名
+    user.path: /user/** # 把myUser打头的所有请求都转发给user-provider
     
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
